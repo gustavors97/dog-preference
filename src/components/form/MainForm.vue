@@ -112,7 +112,6 @@ export default {
       this.$refs.form.reset();
       this.$refs.form.resetValidation();
       this.$refs.ratingField.resetValue();
-      this.$store.dispatch("clearFormValues");
     },
   },
 };

@@ -10,7 +10,7 @@ export default new Vuex.Store({
     form: {
       email: null,
       breed: null,
-      breedsList: null,  
+      breedsList: null,
       radio: null,
       switch: null,
       rating: null,
@@ -95,15 +95,5 @@ export default new Vuex.Store({
         commit('setDogImage', null);
       }
     },
-    clearFormValues({ state }) {
-      state.form = {
-        email: null,
-        breed: null,  
-        radio: null,
-        switch: null,
-        rating: null,
-        dogImage: null,
-      };
-    }
   },
 })

@@ -38,7 +38,7 @@ export default {
         return this.$store.state.form.breed;
       },
       set(value) {
-        this.$store.commit('setBreed', value)
+        this.$store.commit("setBreed", value);
       },
     },
     breedsList: {
@@ -47,7 +47,7 @@ export default {
       },
       set(value) {
         if (value) {
-          this.$store.commit('setBreedsList', value)
+          this.$store.commit("setBreedsList", value);
         }
       },
     },
@@ -64,7 +64,7 @@ export default {
   methods: {
     async requestData() {
       this.setLoading(true);
-      await this.$store.dispatch('getAllBreeds');
+      await this.$store.dispatch("getAllBreeds");
       this.setLoading(false);
     },
     setLoading(arg = true) {

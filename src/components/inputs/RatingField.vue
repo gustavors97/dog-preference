@@ -1,7 +1,7 @@
 <template>
   <div class="rating-field mb-4">
     <label>{{ label }}</label>
-    <v-rating hover ripple :value="dataValue">
+    <v-rating hover ripple :value="rating" ref="rating">
       <template #item="props">
         <v-chip
           :color="getRateChipColor(props.isFilled)"
@@ -45,17 +45,9 @@ export default {
     },
   },
 
-  data() {
-    return {
-      dataValue: this.value,
-    };
-  },
-
   created() {
-    if (!this.dataValue) {
-      this.dataValue = this.rating;
-    } else {
-      this.rating = this.dataValue;
+    if (this.value) {
+      this.rating = this.value;
     }
   },
 
@@ -76,7 +68,6 @@ export default {
       return rateIndex + 1;
     },
     resetValue() {
-      this.dataValue = 0;
       this.rating = 0;
     },
   },
