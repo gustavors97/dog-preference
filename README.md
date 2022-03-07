@@ -14,8 +14,6 @@
 
 ## Setup and running the project
 
-<br>
-
 #### 1. How to setup the project?
 Clone the project and run `npm install`;
 
