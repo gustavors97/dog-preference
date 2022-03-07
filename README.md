@@ -12,8 +12,6 @@
 
 ====================================================
 
-<br>
-
 ## Setup and running the project
 
 <br>
@@ -21,17 +19,11 @@
 #### 1. How to setup the project?
 Clone the project and run `npm install`;
 
-<br>
-
 #### 2. How to compile and hot-reloads for development
 Run `npm run serve`
 
-<br>
-
 #### 3. How to compiles and minifies for production
 Run `npm run build`
-
-<br>
 
 #### 4. Running Lints and fixes files
 Run `npm run lint`
